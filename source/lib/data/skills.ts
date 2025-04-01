@@ -32,7 +32,7 @@ function defineSkill<const Name extends string, const Tags extends string[]>(
 export const skills = [
   defineSkill("AWS"),
   defineSkill("C++"),
-  defineSkill("C#"),
+  defineSkill("Csharp"),
   defineSkill("Python"),
   defineSkill("JavaScript"),
   defineSkill("TypeScript"),
