@@ -1,7 +1,7 @@
 {
     "name": "worker-name",
     "compatibility_date": "2025-04-02",
-    "main": "source/index.ts",
+    "main": "source/pages/index.astro",
     "assets": {
         "directory": "./dist"
     }
