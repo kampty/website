@@ -37,6 +37,6 @@ export const jobs = [
     url: "https://gilab.udg.edu",
     startDate: new Date("2020-11"),
     endDate: new Date("2022-9"),
-    skills: ["Analytical Thinking", "Csharp", "Unity", "PHP", "MySQL"],
+    skills: ["Analytical Thinking", "Unity", "PHP", "MySQL"],
   }),
 ] as const satisfies JobData[];

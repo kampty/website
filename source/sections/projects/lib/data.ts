@@ -80,7 +80,7 @@ export const projects = [
     showcaseUrl: "https://github.com/iivvaannxx/the-izland",
 
     featured: true,
-    relatedSkills: ["Unity", "Csharp", "Blender", "Teamwork"],
+    relatedSkills: ["Unity", "Blender", "Teamwork"],
 
     preview: (await import("../assets/the-izland/cover.png")).default,
     video: {
@@ -119,7 +119,7 @@ export const projects = [
   defineProject("isolated", {
     year: 2022,
     featured: false,
-    relatedSkills: ["Unity", "Csharp"],
+    relatedSkills: ["Unity"],
 
     showcaseUrl: "https://github.com/iivvaannxx/isolated",
   }),
@@ -127,7 +127,7 @@ export const projects = [
   defineProject("sense-quiz", {
     year: 2021,
     featured: false,
-    relatedSkills: ["Unity", "Csharp"],
+    relatedSkills: ["Unity"],
 
     repository: "https://github.com/iivvaannxx/sense-quiz",
   }),
@@ -135,7 +135,7 @@ export const projects = [
   defineProject("fruit-ninja-vr", {
     year: 2022,
     featured: false,
-    relatedSkills: ["Unity", "Csharp"],
+    relatedSkills: ["Unity"],
 
     showcaseUrl: "https://github.com/iivvaannxx/fruit-ninja-vr",
   }),
