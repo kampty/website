@@ -84,7 +84,7 @@ export const english = {
           year: "Year",
           project: "Project",
           description: "Description",
-          builtWith: "Built with",
+          builtWith: "Made with",
           links: "Links",
         },
 
