@@ -3,7 +3,7 @@ import { Picture } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
 import { Badge, Link } from "@components/base";
-import { bento, email, github, linkedIn, resume } from "@lib/data/socials";
+import { bento, email, github, linkedIn, resume, youtube } from "@lib/data/socials";
 
 import avatar from "./assets/avatar.png";
 
@@ -43,20 +43,7 @@ const employed = true;
       />
     </div>
   </header>
-  <h3>
-    I <AnimatedHeadline
-      texts={[
-        "believe I can fly",
-        "can touch the sky",
-        "think about it every night and day",
-        "spread my wings and fly away",
-      ]}
-      y={-80}
-      fade={2300}
-      slide={1000}
-      wait={500}
-    />... 🎵
-  </h3>
+
 
   <div>
     <p
@@ -88,7 +75,7 @@ const employed = true;
 
         <ul class="flex gap-x-2">
           {
-            [linkedIn, github, email, resume, bento].map(
+            [youtube, github, email, resume, bento].map(
               ({ href, i18nKey, iconKey }) => {
                 const translatedLabel = translations.socials[i18nKey];
                 return (
