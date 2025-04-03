@@ -121,7 +121,7 @@ export const english = {
         content: `I'm a ${strong("software")} developer.`,
       },
 
-      greeting: "Hey! I'm Ivan Porto",
+      greeting: "Hey! I'm Kampty",
       introduction: `
         Specialized in game development, yet also passionate about developing any kind of software. With
         ${bold("6+&nbsp;years of coding expertise")}, I am currently seeking to leverage my 
