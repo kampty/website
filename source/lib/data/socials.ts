@@ -48,6 +48,13 @@ export const email = {
   iconKey: "lucide:mail",
 } as const satisfies SocialData;
 
+/** My email address. */
+export const youtube = {
+  href: "mailto:hello@ivanporto.io",
+  i18nKey: "youtube",
+  iconKey: "lucide:youtube",
+} as const satisfies SocialData;
+
 /** My Bento profile. */
 export const bento = {
   href: "https://bento.me/ivanporto",
@@ -84,5 +91,6 @@ export const socials = [
   email,
   resume,
   bento,
+  youtube,
   threads,
 ] as const satisfies SocialData[];
