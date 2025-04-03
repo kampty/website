@@ -3,6 +3,6 @@
     "compatibility_date": "2025-04-02",
     "main": "source/sections/index.ts",
     "assets": {
-        "directory": "./dist"
+        "directory": "source/assets"
     }
 }

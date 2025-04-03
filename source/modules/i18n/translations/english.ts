@@ -20,7 +20,7 @@ export const english = {
       archive: "archive",
     },
 
-    title: "Ivan Porto | Software Developer",
+    title: "Kampty",
     description: `
       Hey! I'm Ivan Porto, a software developer specialized in game development, yet also passionate about 
       developing any kind of software. Skilled both in backend and frontend. Fluent in Catalan, Spanish, and English.
