@@ -88,10 +88,5 @@
     "esbuild",
     "lefthook",
     "sharp"
-  ],
-  "pnpm": {
-    "patchedDependencies": {
-      "vaul@0.9.1": "patches/vaul@0.9.1.patch"
-    }
-  }
-}
+  ]
+ }
