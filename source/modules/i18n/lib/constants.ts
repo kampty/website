@@ -1,6 +1,6 @@
 import { clientEnglish, english } from "../translations/english";
-import { clientSpanish, spanish } from "../translations/spanish";
-import { clientCatalan, catalan } from "../translations/catalan";
+import { clientUkrainian, spanish } from "../translations/ukrainian";
+import { clientRussian, catalan } from "../translations/russian";
 
 import type { Locale, Timezone } from "./types";
 
@@ -24,8 +24,8 @@ export const DEFAULT_TRANSLATION = english satisfies {
 /** The map with all our translated strings. */
 export const TRANSLATIONS = {
   en: english,
-  ca: catalan,
-  es: spanish,
+  ua: ukrainian,
+  ru: russian,
 } as const;
 
 export const CLIENT_TRANSLATIONS = {
