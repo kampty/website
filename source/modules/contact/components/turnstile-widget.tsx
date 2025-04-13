@@ -45,7 +45,7 @@ export const TurnstileWidget = forwardRef<TurnstileInstance | undefined, Props>(
             size: widgetFits ? "normal" : "compact",
 
             // As of this moment catalan is not available.
-            language: locale === "ua" ? "es" : locale,
+            language: locale === "ua" ? "en" : locale,
           }}
         />
       </div>
