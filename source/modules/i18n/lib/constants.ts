@@ -1,6 +1,6 @@
 import { clientEnglish, english } from "../translations/english";
-import { clientUkrainian, spanish } from "../translations/ukrainian";
-import { clientRussian, catalan } from "../translations/russian";
+import { clientUkrainian, ukrainian } from "../translations/ukrainian";
+import { clientRussian, russian } from "../translations/russian";
 
 import type { Locale, Timezone } from "./types";
 
@@ -30,8 +30,8 @@ export const TRANSLATIONS = {
 
 export const CLIENT_TRANSLATIONS = {
   en: clientEnglish,
-  ca: clientCatalan,
-  es: clientSpanish,
+  ua: clientUkrainian,
+  ru: clientRussian,
 };
 
 /** The formatting options passed to the Intl API. */

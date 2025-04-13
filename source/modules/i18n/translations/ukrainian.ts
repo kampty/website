@@ -10,7 +10,7 @@ import {
 } from "../lib/helpers/html";
 
 /** The catalan strings for the website. */
-export const catalan = {
+export const ukrainian = {
   meta: {
     name: "Català",
     locale: "ca",
@@ -400,6 +400,23 @@ export const catalan = {
             },
           },
         },
+        community: {
+          title: "Community UwU",
+          iconAlt: "Emoji d'un gorro de graduació",
+
+          items: {
+            gddv: {
+              title: "Grau en Disseny y Desenvolupament de Videojocs",
+              location: "Girona, Espanya",
+
+              url: "https://www.udg.edu/ca/estudia/Oferta-formativa/Graus/Fitxes?IDE=1436&ID=3105G1315",
+              description: `Graduat per la ${link("https://www.udg.edu/ca/", strong("Universitat de Girona"), true)},
+              on vaig adquirir un domini sòlid dels aspectes teòrics i pràctics del meu camp. Això no només va incloure
+              desenvolupament de jocs, sinó també ${strong("algorismes i estructures de dades")},
+              ${strong("arquitectura de sistemes")}, ${strong("bases de dades")}, entre altres àrees rellevants.`,
+            },
+          },
+        },
 
         location: {
           title: "Ubicació",
@@ -439,7 +456,7 @@ export const catalan = {
 } as const;
 
 /** The catalan strings for the client code.  */
-export const clientCatalan = {
+export const clientUkrainian = {
   // These are translation strings fed to dynamic content (client components).
   // This means that they will end up in final the JavaScript bundle.
 

@@ -10,7 +10,7 @@ import {
 import { getAdobeLinkStyle } from "../lib/helpers/style";
 
 /** The spanish strings for the website. */
-export const spanish = {
+export const russian = {
   meta: {
     name: "Español",
     locale: "es",
@@ -404,6 +404,24 @@ export const spanish = {
             },
           },
         },
+        community: {
+          title: "COMMUNITY TITLE",
+          iconAlt: "Emoji de un gorro de graduación",
+
+          items: {
+            gddv: {
+              title: "Grado en Diseño y Desarrollo de Videojuegos",
+              location: "Girona, España",
+
+              url: "https://www.udg.edu/es/estudia/Oferta-formativa/Graus/Fitxes?IDE=1436&ID=3105G1315",
+              description: `Graduado por la ${link("https://www.udg.edu/es/", strong("Universidad de Girona"), true)},
+              donde adquirí un dominio sólido de los aspectos teóricos y prácticos de mi campo. Esto no solo incluyó 
+              desarrollo de juegos, sino también ${strong("algoritmos y estructuras de datos")},
+              ${strong("arquitectura de sistemas")}, ${strong("bases de datos")}, entre otras áreas relevantes.`,
+            },
+          },
+        },
+
 
         location: {
           title: "Ubicación",
@@ -443,7 +461,7 @@ export const spanish = {
 } as const;
 
 /** The spanish strings for the client code.  */
-export const clientSpanish = {
+export const clientRussian = {
   // These are translation strings fed to dynamic content (client components).
   // This means that they will end up in final the JavaScript bundle.
 

@@ -15,8 +15,8 @@
   // The languages that are available in the app
   const languages = {
     en: { label: "ENG", name: "English", buttonName: "Language" },
-    es: { label: "ESP", name: "Español", buttonName: "Idioma" },
-    ca: { label: "CAT", name: "Català", buttonName: "Llengua" },
+    es: { label: "UA", name: "Ukrainian", buttonName: "Мова" },
+    ca: { label: "RU", name: "Russian", buttonName: "Язык" },
   };
 
   /**
