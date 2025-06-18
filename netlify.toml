@@ -10,6 +10,8 @@
 
 [build.environment]
   NODE_VERSION = "18"
+  PYTHON_VERSION = "3.8"
+  RUBY_VERSION = "2.7.2"
   PUBLIC_ENV = "production"
 
 # SvelteKit adapter-netlify configuration
