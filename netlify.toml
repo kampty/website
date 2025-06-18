@@ -1,8 +1,70 @@
 [build]
   command = """
-    curl -fsSL https://bun.sh/install | bash
-    && export PATH=$HOME/.bun/bin:$PATH
-    && bun install
-    && bun build
+    curl -fsSL https://bun.sh/install | bash &&
+    export PATH=$HOME/.bun/bin:$PATH &&
+    bun --version &&
+    bun install &&
+    bun run build
   """
-  publish = "build" # or "dist" or whatever your output folder is
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18"
+  PUBLIC_ENV = "production"
+
+# SvelteKit adapter-netlify configuration
+[functions]
+  directory = "netlify/functions"
+
+# SvelteKit routes
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# SPA fallback for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/_app/immutable/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Development contexts
+[context.deploy-preview]
+  command = """
+    curl -fsSL https://bun.sh/install | bash &&
+    export PATH=$HOME/.bun/bin:$PATH &&
+    bun install &&
+    bun run build
+  """
+  [context.deploy-preview.environment]
+    PUBLIC_ENV = "preview"
+
+[context.branch-deploy]
+  command = """
+    curl -fsSL https://bun.sh/install | bash &&
+    export PATH=$HOME/.bun/bin:$PATH &&
+    bun install &&
+    bun run build
+  """
+  [context.branch-deploy.environment]
+    PUBLIC_ENV = "staging"
