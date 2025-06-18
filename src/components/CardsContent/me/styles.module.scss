@@ -1,0 +1,141 @@
+.text {
+  margin: 0 10px;
+  width: 560px;
+  font-size: calc(15/16*1rem);
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.me {
+  display: flex;
+  $gap: 15px;
+  gap: $gap;
+  align-self: center;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .imgBlock {
+
+      video {
+        float: left;
+      }
+
+      img, video {
+        margin: 0 10px;
+      }
+    }
+
+    .playlistHint {
+      border: 2px solid #0062ff;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .about {
+      width: 100%;
+      line-height: 1.7em;//1.65;
+      display: flex;
+      align-items: center;
+
+      h2 {
+        &:first-child {
+          margin-top: 0.5rem;
+        }
+        line-height: 1.5em;
+      }
+
+      ul {
+        li {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+  .rightCol {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+
+    .topRow {
+      display: flex;
+      gap: $gap;
+
+      .profileCard {
+        flex: 1;
+
+        & > div {
+          background: linear-gradient(125deg, hsl(186deg 2% 4.3%), hsl(218deg 30% 2.5%));
+
+          div, span {
+            color: #eee !important;
+          }
+        }
+      }
+    }
+  }
+
+  .avatar img {
+    background-color: #eee;
+  }
+
+  .contactsContainer > div {
+    background: linear-gradient(110deg, hsl(218deg 30% 2.5%), hsl(263deg 2% 3%)) !important;
+
+    div, span {
+      color: #eee !important;
+
+      a {
+        color: #c5c5c5; 
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .experience {
+    flex: 1;
+    
+    .categories {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      .technologiesGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+
+        @media screen and (max-width: 1360px) {
+          grid-template-columns: repeat(1, 1fr);
+        }
+
+        .technologyCard {
+          transition: background-color 0.5s;
+
+          @media screen and (max-width: 1360px) {
+            max-width: 100%;
+          }
+          
+          .name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+
+          svg {
+            width: auto;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

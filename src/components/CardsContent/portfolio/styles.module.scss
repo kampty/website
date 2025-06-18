@@ -1,0 +1,160 @@
+@import '../../../styles/transitions.scss';
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 40px;
+    // SiteSettings are overlapping with portfolio table
+  }
+
+  .logo {
+    width: 52px;
+    // aspect-ratio: 1/1;
+    // $size: 52px;
+    // height: $size;
+    // width: $size;
+    height: 52px;
+    object-fit: contain;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    &.placeholderLogo {
+      filter: grayscale(1);
+      padding: 5px;
+      margin: 10px;
+      width: 32px;
+      height: 32px;
+      background-color: rgb(122 122 122 / 15%);
+      border-radius: 5px;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .textField {
+      flex: 1;
+    }
+  }
+
+  .dataGrid {
+    flex: 1;
+
+    [class~=MuiDataGrid-row] {
+      cursor: pointer;
+
+      [class~=MuiDataGrid-cell]:focus {
+        outline: none;
+      }
+
+      .nameCell {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          line-height: 1.6;
+
+          .projectCategory {
+            color: var(--secondary-text-color);
+            @include defaultTransition(color);
+          }
+        }
+      }
+
+      .multilineCell {
+        white-space: normal;
+        line-height: 2;
+        padding: 3px 0 5px 0;
+      }
+
+      .stack {
+      }
+
+      .projectInfoPlaceholder {
+        color: #dedede;
+        font-style: italic;
+      }
+
+      .projectName {
+        font-weight: 600;
+      }
+
+      .description {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px !important;
+
+  span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  span > a {
+    color: inherit;
+  }
+}
+
+.translateButton {
+  display: block;
+  margin-top: 10px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    svg {
+      vertical-align: middle;
+    }
+  }
+}
+
+.arrow {
+  top: 0;
+  left: 0;
+  margin-top: -0.9em;
+  margin-left: -0.1em;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  font-size: 7px;
+
+  &::before {
+    content: '';
+    border-width: 0 1em 1em 1em;
+    border-color: transparent transparent #1d1d1d transparent;
+    margin: auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &.lightTheme::before {
+    border-color: transparent transparent #fff transparent;
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+.paper {
+  margin-top: 1px;
+}
