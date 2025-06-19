@@ -8,4 +8,5 @@ export default [
   'mobile',
   'gamedev',
   'design',
+  'uwu',
 ]
