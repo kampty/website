@@ -105,6 +105,6 @@ export default {
     name: 'More coming soon',
     logo: reactstrapLogo,
     startedLearning: new Date(2021, 3, 5),
-    category: 'frontend'
+    category: 'uwu'
   }
 }
