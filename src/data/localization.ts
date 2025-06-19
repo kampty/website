@@ -290,7 +290,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
       'STARTED_LEARNING': 'Учу с',
       'OPEN_PROJECTS_CAPTION': 'Смотреть проекты',
       'WHAT_IS_KAMPTY': {
-        'HEADING': 'Как переводится "hloth"?',
+        'HEADING': 'Как переводится "hloth"? 1',
         'TEXT': 'hloth (на рус. хлоз, читается как [h l ó θ]) — этот никнейм я придумал в ноябре 2021 года, когда создавал профиль фрилансера. Этот никнейм не случайный набор букв, потому что у меня было 5 критериев:',
         'CRITERIA': [
           'от 5 до 7 букв',

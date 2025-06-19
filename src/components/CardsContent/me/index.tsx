@@ -178,13 +178,13 @@ export function Me() {
             <div className={styles.info}>
               <AboutCard isMobile={isMobile} />
               <AboutMe2 />
-              <WhatIsKampty />
             </div>
             <div className={styles.rightCol}>
               <div className={styles.topRow}>
                 <MiniProfile />
                 <Contacts />
               </div>
+              <WhatIsKampty />
               <Experience />
             </div>
           </>)
@@ -193,8 +193,8 @@ export function Me() {
             <Contacts />
             <AboutCard isMobile={isMobile} />
             <WhatIsKampty />
-            <Experience />
             <AboutMe2 />
+            <Experience />
           </div>)
       }
     </div>
