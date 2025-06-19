@@ -28,7 +28,7 @@ function AboutCard({ isMobile }: {
           <img src='/static/site-decorations/vk-dog.webp' alt={translation.INTRO_IMAGE} align='right' width={isMobile ? 80 : 130} />
           <p dangerouslySetInnerHTML={{ __html: dates(translation.INTRO) }} />
         </div>
-        <p dangerouslySetInnerHTML={{ __html: dates(translation.BACKEND) }} />
+        <p dangerouslySetInnerHTML={{ __html: dates(translation.PARAGRAPH_2) }} />
         <div className={styles.imgBlock}>
           <video src="/static/site-decorations/kolobanga.webm" autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
           <p dangerouslySetInnerHTML={{ __html: translation.MY_PROJECTS }} />
