@@ -1,5 +1,6 @@
-# hloth.dev
+# kampty.xyz
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a13456c8-d318-4045-8ef5-aaec50ee98f2/deploy-status)](https://app.netlify.com/projects/kampty/deploys)
 My personal website, containing information about me, my portfolio, resume, funny things and other stuff
 
 ![Screenshots of website](https://user-images.githubusercontent.com/59040542/163002146-159d5f4e-aa81-4463-921a-6c7ffe5614fd.png)
@@ -24,3 +25,5 @@ Type `bun run build`
 ## What is robots.txt??
 
 Idk I had one hour before deadline and I decided to entertain myself by putting some things into robots.txt
+
+The original site was made by https://hloth.dev
