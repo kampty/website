@@ -192,9 +192,9 @@ export function Me() {
             <MiniProfile />
             <Contacts />
             <AboutCard isMobile={isMobile} />
+            <WhatIsKampty />
             <Experience />
             <AboutMe2 />
-            <WhatIsKampty />
           </div>)
       }
     </div>
