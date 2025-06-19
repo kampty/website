@@ -208,7 +208,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
     'CARD_ABOUT': 'О сайте',
     'CARD_DONATE': 'Донаты',
     'CARD_ARCHIVE_LINK': 'Архив',
-    'CARD_ME_FIRST_NAME': 'Виктор',
+    'CARD_ME_FIRST_NAME': 'Kampty',
     'CARD_ME_LAST_NAME': 'Щелочков',
     'CARD_ME_SPECIALIZATION': 'Fullstack developer',
     'FULL_SPECIALIZATION': 'Фуллстек разработчик',
@@ -220,7 +220,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
     ],
     'CARD_PORTFOLIO_IN_PORTFOLIO': 'в портфолио',
     'CARD_SERVICES': 'Услуги',
-    'ONION_SITE_LINK': 'Переключиться на onion-сервис этого сайта',
+    'ONION_SITE_LINK': 'Мы не поддерживаем onion сайты, эта ссылка будет заменена в ближайшее время',
     'THEME_SWITCH_TO_LIGHT': 'Включить светлую тему',
     'THEME_SWITCH_TO_DARK': 'Включить темную тему',
     'CHANGE_LANGUAGE': 'Сменить язык',
@@ -257,7 +257,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
       }
     },
     'ABOUT_ME': {
-      'HEADING': 'Привет, меня зовут Виктор, и я фуллстек разработчик',
+      'HEADING': 'Привет, меня зовут Kampty, я фурри, блогер и разработчик из Украины',
       'INTRO': 'Я занимаюсь разработкой PWA, веб-сайтов (фронтенд и бекенд), ботов, инструментов для разработчиков, библиотек, плагинов, парсеров и агрегаторов для крупных клиентов и частных заказчиков более двух лет. У меня за плечами сотни часов коммерческой разработки и тысячи часов общей практики с React, Next.js, TypeScript. Мой основной стек для фронтенда: <b>React, Next.js, Vite, Bun.sh и Elysia</b> (опыт работы %date_fns_1610222400%). Я использую методологию Feature-Sliced Design для упорядочивания файлов в проекте, линтеры и кодстайлеры в VSCode. У меня есть опыт интеграции ИИ в веб-сайты, я разрабатываю много сайд-проектов с GPT (например, BMO из Времени Приключений в реальной жизни: OpenAI Whisper, GPT4).',
       'INTRO_IMAGE': 'Стикер белой собаки Спотти ВКонакте с жестом Лайк',
       'BACKEND': 'Помимо фронтенда я занимаюсь и бекендом, обычно создавая сайты «под ключ», делая деплой на Vercel, Netlify, GitHub/GitLab CI/CD или напрямую на VPS с контейнером Docker или без. Я работал как под управлением старших разработчиков в команде, так и тимлидом. Обычно я пишу бекенд на <b>Node.js</b> (опыт работы %date_fns_1590955200%), но также успел поработать с Rust, Go, Ruby.',
