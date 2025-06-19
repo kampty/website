@@ -55,7 +55,7 @@ function AboutCard({ isMobile }: {
   )
 }
 
-function WhatIsHloth() {
+function WhatIsKampty() {
   const translation = useAppSelector(selectTranslation).ABOUT_ME
 
   return (
@@ -76,7 +76,7 @@ function WhatIsHloth() {
   )
 }
 
-function AboutMeAsPerson() {
+function AboutMe2() {
   const translation = useAppSelector(selectTranslation).ABOUT_ME
 
   return (
@@ -177,8 +177,8 @@ export function Me() {
           ? (<>
             <div className={styles.info}>
               <AboutCard isMobile={isMobile} />
-              <AboutMeAsPerson />
-              <WhatIsHloth />
+              <AboutMe2 />
+              <WhatIsKampty />
             </div>
             <div className={styles.rightCol}>
               <div className={styles.topRow}>
@@ -193,8 +193,8 @@ export function Me() {
             <Contacts />
             <AboutCard isMobile={isMobile} />
             <Experience />
-            <AboutMeAsPerson />
-            <WhatIsHloth />
+            <AboutMe2 />
+            <WhatIsKampty />
           </div>)
       }
     </div>
