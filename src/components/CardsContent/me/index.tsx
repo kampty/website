@@ -61,16 +61,16 @@ function WhatIsHloth() {
   return (
     <Card className={styles.about}>
       <div className={styles.text}>
-        <h2 dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_HLOTH.HEADING }} />
-        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_HLOTH.TEXT }} />
+        <h2 dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.HEADING }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.TEXT }} />
         <ol>
-          {translation.WHAT_IS_HLOTH.CRITERIA.map((criteria, i) => <li key={i}>{criteria}</li>)}
+          {translation.WHAT_IS_KAMPTY.CRITERIA.map((criteria, i) => <li key={i}>{criteria}</li>)}
         </ol>
-        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_HLOTH.TEXT2 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.TEXT2 }} />
         <ul>
-          {translation.WHAT_IS_HLOTH.VARIANTS.map((variant, i) => <li key={i}>{variant}</li>)}
+          {translation.WHAT_IS_KAMPTY.VARIANTS.map((variant, i) => <li key={i}>{variant}</li>)}
         </ul>
-        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_HLOTH.TEXT3 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.TEXT3 }} />
       </div>
     </Card>
   )
@@ -82,9 +82,9 @@ function AboutMeAsPerson() {
   return (
     <Card className={styles.about}>
       <div className={styles.text}>
-        <h2 dangerouslySetInnerHTML={{ __html: translation.ABOUT_ME_AS_PERSON.HEADING }} />
-        <p dangerouslySetInnerHTML={{ __html: translation.ABOUT_ME_AS_PERSON.INTRO }} />
-        <p dangerouslySetInnerHTML={{ __html: dates(translation.ABOUT_ME_AS_PERSON.TEXT, 'floor') }} className='whitespace-pre-wrap' />
+        <h2 dangerouslySetInnerHTML={{ __html: translation.ABOUT_ME_2.HEADING }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.ABOUT_ME_2.INTRO }} />
+        <p dangerouslySetInnerHTML={{ __html: dates(translation.ABOUT_ME_2.TEXT, 'floor') }} className='whitespace-pre-wrap' />
       </div>
     </Card>
   )
@@ -101,7 +101,7 @@ function MiniProfile() {
         avatarStyles={{ padding: 0, boxShadow: '0 0 2px 0 rgba(0, 0, 0.25)' }}
         title={`${translation.CARD_ME_FIRST_NAME} ${translation.CARD_ME_LAST_NAME}`}
         subtitle={translation.FULL_SPECIALIZATION}
-        caption='VityaSchel / @hloth'
+        caption='@kampty / @itskampty'
       >
         <a className='w-full block absolute bottom-0 left-0 text-white border-solid border-t border-x-0 border-b-0 border-t-neutral-800' href='https://cv.hloth.dev' target='_blank' rel='nofollow noreferrer'>
           <ButtonBase tabIndex={-1} className='font-[inherit] font-medium w-full !justify-between !p-4 text-xs'>
@@ -132,7 +132,7 @@ function Contacts() {
 const links = {
   GitHub: {
     icon: ImGithub,
-    href: 'https://github.com/VityaSchel',
+    href: 'https://go.kampty.xyz/github',
     label: '@VityaSchel'
   },
   // VKontakte: {
