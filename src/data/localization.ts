@@ -285,7 +285,8 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
         'ai': 'ИИ (Искуственный Интеллект)',
         'gamedev': 'Разработка игр',
         'design': 'Дизайн',
-        'mobile': 'Мобайл'
+        'mobile': 'Мобайл',
+        'uwu': 'UwU'
       },
       'STARTED_LEARNING': 'Учу с',
       'OPEN_PROJECTS_CAPTION': 'Смотреть проекты',
@@ -507,7 +508,8 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
         'ai': 'AI (Artificial Intelligence)',
         'gamedev': 'Game development',
         'design': 'Design',
-        'mobile': 'Mobile'
+        'mobile': 'Mobile',
+        'uwu': 'UwU'
       },
       'STARTED_LEARNING': 'Learning since',
       'OPEN_PROJECTS_CAPTION': 'Open projects',
