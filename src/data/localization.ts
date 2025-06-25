@@ -629,7 +629,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
       }
     },
     'ABOUT_THIS_WEBSITE': {
-      'HEADING': 'Website hloth.dev',
+      'HEADING': 'Website kampty.xyz',
       'TEXT': 'This is my sixth personal site. It contains information about me, my projects, is a kind of portfolio and resume at the same time, and even serves as a tool for donations to me. <br></br>Some information about my previous personal websites:',
       'PREVIOUS_SITES': [
         'Website on uCoz CMS (2015-2016) — My first website, which had a lot of games, tests and other stuff, inspired by legendary girl Diana website <a href="http://devo4ka‑diano4ka.narod.ru/" target="_blank" rel="noreferrer">http://devo4ka-diano4ka.narod.ru/</a>',
