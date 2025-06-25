@@ -166,8 +166,8 @@ const projects: Project[] = [
     },
     scope: 3,
     description: {
-      'ru-RU': 'Открытый и бесплатный реестр записей ONS, автоматически анализирующий блокчейн OXEN. Бекнд парсит новые ONS записи с помощью JSON RPC и расшифровывает значения с помощью Blake2b и argon2. Фронтенд ориентирован на работу офлайн, поэтому я написал собственный сервис воркер и настроил webpack для его загрузки с механизмом background sync и локальной базой данных. Этот сайт также полностью автоматически интегрируется с блокчейном для создания записей, чтобы пользователю не нужно было покупать криптовалюту. Я развернул собственный SMTP сервер и настроил 100% доставку писем и интегрировал сайт с YooKassa для приема платежей и оплаты.',
-      _DEFAULT_: 'Open and free ONS record registry, automatically analyzing OXEN blockchain. The backend parses new ONS records using JSON RPC and decrypts values using Blake2b and argon2. The frontend is designed for offline operation, so I wrote my own service worker and configured webpack for its loading with background sync mechanism and local database. This site is also fully automated for blockchain entries creation, so the user does not need to buy cryptocurrency. I deployed my own SMTP server and set up 100% email delivery and integrated the site with YooKassa for accepting payments.',
+      'ru-RU': 'Test',
+      _DEFAULT_: 'Test',
     },
     unpublic: false,
     hidden: false,
@@ -193,15 +193,15 @@ const projects: Project[] = [
     },
     scope: 2,
     description: {
-      'ru-RU': 'Платформа, на которой разработчики могут полностью автоматически опубликовать бота для мессенджера Session. Бекенд проводит полную верификацию авторства бота при помощи отсылки команд в сторонний мессенджер и проверит контент бота с помощью OpenAI Moderation.',
-      _DEFAULT_: 'A platform where developers can fully automatically publish a bot for the Session messenger. The backend performs full bot authorship verification by sending commands to an external messenger and checks the bot content using OpenAI Moderation.',
+      'ru-RU': 'Test',
+      _DEFAULT_: 'Test',
     },
     unpublic: true,
     hidden: false,
     logo: sessionBotsDirectoryLogo,
     links: [
-      'https://sessionbots.directory',
-      'https://github.com/VityaSchel/session-bots-directory',
+      'https://floofbite.com',
+      'https://floofbite.com',
     ],
     category: 'website',
     id: 'session-bots-directory'
@@ -224,13 +224,13 @@ const projects: Project[] = [
     unpublic: false,
     hidden: true,
     links: [
-      'https://github.com/VityaSchel/bad-ux-support-widget'
+      'https://floofbite.com'
     ],
     category: 'website',
     id: 'bad-ux-support-form'
   },
   {
-    name: 'PGI',
+    name: 'Test project',
     stack: [
       'Java'
     ],
@@ -240,8 +240,8 @@ const projects: Project[] = [
     },
     scope: 2,
     description: {
-      'ru-RU': 'Приложение для посика биолгических родителей и связей с другими людьми',
-      _DEFAULT_: 'Application for searching biological parents and connections with other people',
+      'ru-RU': 'Приложение',
+      _DEFAULT_: 'Application',
     },
     unpublic: false,
     hidden: false,
@@ -264,8 +264,8 @@ const projects: Project[] = [
     },
     scope: 1,
     description: {
-      'ru-RU': 'ИИ, генерирующий предложения, похожие на то, что говорит мой друг Никита',
-      _DEFAULT_: 'AI generating sentences similar to what my friend Nikita says',
+      'ru-RU': '123',
+      _DEFAULT_: '123',
     },
     unpublic: false,
     hidden: false,
@@ -285,13 +285,13 @@ const projects: Project[] = [
     },
     scope: 1,
     description: {
-      'ru-RU': 'Сайт, объясняющий разницу между похожими вещами. Мой самый первый сайт на чистом HTML.',
-      _DEFAULT_: 'Site explaining the difference between similar things. My very first site on pure HTML.',
+      'ru-RU': 'HTML.',
+      _DEFAULT_: 'HTML.',
     },
     unpublic: false,
     hidden: false,
     category: 'website',
-    id: 'в-чем-разница'
+    id: 'eng'
   },
   {
     name: 'qqsh',
@@ -305,8 +305,8 @@ const projects: Project[] = [
     },
     scope: 1,
     description: {
-      'ru-RU': 'Игра по типу quiplash, сделанная на phpDevelStudio когда мне было 12 лет. Бекенд был на PHP',
-      _DEFAULT_: 'Game like quiplash, made on phpDevelStudio when I was 12 years old. Backend was on PHP'
+      'ru-RU': 'Игра',
+      _DEFAULT_: 'Game'
     },
     unpublic: false,
     hidden: false,
