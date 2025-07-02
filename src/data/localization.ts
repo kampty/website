@@ -485,7 +485,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
       'INTRO_IMAGE': 'White dog sticker from VKontakte social network',
       'PARAGRAPH_2': 'Alongside making furry content, I also develop apps. It’s not something I do full-time, but I enjoy building things when I get an idea worth turning into a project. Sometimes it’s small tools or bots, other times it’s bigger things like websites or automations — whatever seems fun or useful. I’m also a fursuiter, and being in suit is a big part of how I express myself in the fandom. It’s a mix of digital and real-world creativity that keeps things interesting for me.',
       'MY_PROJECTS': 'Some of the things I’ve been proud to be part of recently:',
-      'MY_PROJECTS_IMAGE': 'Yellow Kolobok with sign of the horns gesture',
+      'MY_PROJECTS_IMAGE': 'Kampty proud sticker',
       'FEATURED': 'All my projects you can see on <a href="/portfolio">portfolio page</a>, but here are some of them:',
       'FEATURED_1': '<b>Example1</b> Text <a href="/portfolio/test-project" target="_blank" rel="nofollow noreferrer">More.</a>',
       'FEATURED_2': '<b>Example2</b> Text <b>bold</b> and a backe <a href="/portfolio/example-project" target="_blank" rel="nofollow noreferrer">More.</a>',
@@ -513,7 +513,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
       'OPEN_PROJECTS_CAPTION': 'Open projects',
       'WHAT_IS_KAMPTY': {
         'HEADING': 'What is "Kampty"?',
-        'TEXT': 'Kampty (rus. Кэмпти, read as []) — is a nickname I came up with when I was creating facebook profile. This nickname isn\'t just a set of letters, because I had a list of requirements:',
+        'TEXT': 'Kampty (rus. Кэмпти, read as []) — is a nickname I came up with when I was creating my facebook profile. This nickname isn\'t just a set of letters, because I had a list of requirements:',
         'CRITERIA': [
           'from 5 to 7 letters',
           'isn\'t related to anything bad or funny',
@@ -523,7 +523,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
         ],
         'TEXT2': 'On top of that, Kampty is also the name of my main fursona with his own lore <br></br>Kampty is a sixteen-year-old boy who once believed wholeheartedly in the King’s order — polite, loyal, obedient. Taken as a child by a royal agency known as Innovations Inc., he agreed to join their “honor program,” not knowing it meant life inside a hidden medical facility built over a forgotten sanatorium. There, Kampty lives in a clean, quiet room with books, lessons, and polite technicians who study his every cell. At twelve, the injections began. Now, his body is starting to change. Kampty is quiet, clever, and introverted — a programmer by talent, trained for obedience but haunted by growing questions. His trust in the system is starting to crack. The stories they once called fairy tales — of a powerful furred race tied to blue crystal magic — might not be myths. And somewhere, deep inside his bones, something ancient is beginning to stir. Kampty still calls himself human. But soon... he might not be able to anymore. You read till the end? Wow, you are a real fan of my fursona! As a reward, here is the list if my old usernames:',
         'VARIANTS': [
-          'Agent100 — my first username, created while registering my Xbox profile in 2019, not uised anymore',
+          'Agent100 — my first username, created while registering my Xbox profile in 2019, not used anymore',
           'Agent_K78 - my second username, created for a YouTube channel in 2020, more unique, than the first one, but nobody remembered it',
           'MrSyrupYT',
           'MySuruply',
