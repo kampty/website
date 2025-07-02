@@ -512,25 +512,24 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
       'STARTED_LEARNING': 'Learning since',
       'OPEN_PROJECTS_CAPTION': 'Open projects',
       'WHAT_IS_KAMPTY': {
-        'HEADING': 'What is "hloth"?',
-        'TEXT': 'hloth (rus. хлоз, read as [h l ó θ]) — is a nickname I came up with in November of 2021, when I was creating freelance profile. This nickname isn\'t just a set of letters, because I had a list of requirements:',
+        'HEADING': 'What is "Kampty"?',
+        'TEXT': 'Kampty (rus. Кэмпти, read as []) — is a nickname I came up with when I was creating facebook profile. This nickname isn\'t just a set of letters, because I had a list of requirements:',
         'CRITERIA': [
           'from 5 to 7 letters',
-          'related to programming or isn\'t related to anything',
+          'isn\'t related to anything bad or funny',
           'is not an existing word and is not similiar to negative words',
-          'read in 1 or 2 syllables',
-          '(optional) similiar to «Vitya»'
+          'starts with letter "K", as my real name',
+          'Can be read by English speakers'
         ],
-        'TEXT2': 'On top of that, a domain must be available with such a name in the .dev zone or in the zone ending this word. <br></br>Did you know that in ancient Greek mythology, the god Chaos is the immortal god of generations, which indicates that my creativity has no boundaries and will exist as long as the world itself is alive? This is why I took such nickname, but with slight corrections, so that the client won\'t think I\'m unorganized. <br></br>Of course, this is a joke, and this text is here just to fill the space on the left so that you can see the technologies I use on the right side of this page (above this block on mobile verson) and spend more time to improve SEO. Fun fact: while translating this text to English, I was trying to find god that has closer pronounciation to "hloth" and I found "hoth", however, he was blind and killed his brother, so I decided to stay on Chaos 🤓 I came up with this nickname randomly, while picking up simple endings for "hl". My friends offered me some other options:',
+        'TEXT2': 'On top of that, Kampty is also the name of my main fursona with his own lore <br></br>Kampty is a sixteen-year-old boy who once believed wholeheartedly in the King’s order — polite, loyal, obedient. Taken as a child by a royal agency known as Innovations Inc., he agreed to join their “honor program,” not knowing it meant life inside a hidden medical facility built over a forgotten sanatorium. There, Kampty lives in a clean, quiet room with books, lessons, and polite technicians who study his every cell. At twelve, the injections began. Now, his body is starting to change. Kampty is quiet, clever, and introverted — a programmer by talent, trained for obedience but haunted by growing questions. His trust in the system is starting to crack. The stories they once called fairy tales — of a powerful furred race tied to blue crystal magic — might not be myths. And somewhere, deep inside his bones, something ancient is beginning to stir. Kampty still calls himself human. But soon... he might not be able to anymore. You read till the end? Wow, you are a real fan of my fursona! As a reward, here is the list if my old usernames:',
         'VARIANTS': [
-          'vítěz — characters out of ASCII is not recomended to be used in domain name. Also I wanted to print domain name on products in real life, and not every average user and potential client knows, how to type Czech alphabet letters',
-          'megakiller — thanks, Sasha',
-          'pykov — proposed by an AI generating business names (translates as «farty» from Russian)',
-          'vitezhorny',
-          'weetapp',
-          'viapp — the idea was that vi can be heard as we (our)',
-          'vitsch — short for vityaschel, which is also short form of my initials',
-          'devitya — was taken already, but my husband has nickname devio'
+          'Agent100 — my first username, created while registering my Xbox profile in 2019, not uised anymore',
+          'Agent_K78 - my second username, created for a YouTube channel in 2020, more unique, than the first one, but nobody remembered it',
+          'MrSyrupYT',
+          'MySuruply',
+          'TopKen',
+          'Kotyaken',
+          'Kampty - the current one, which I use everywhere, except for the sites, where it is already taken',
         ],
         'TEXT3': 'All these options were not even considered, when I came up with hloth.'
       },
