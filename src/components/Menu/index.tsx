@@ -6,7 +6,7 @@ import { applyMaterial, color } from '../../utils'
 import { useSpring, animated } from '@react-spring/three'
 
 import { MeCardText } from './MeCard'
-import { PortfolioCardText, usePortfolioCardStyles } from './PortfolioCard'
+// import { PortfolioCardText, usePortfolioCardStyles } from './PortfolioCard'
 
 import SFBold from '@/assets/fonts/SFBold.blob'
 import { useAppDispatch, useAppSelector } from '@/store/hooks'
