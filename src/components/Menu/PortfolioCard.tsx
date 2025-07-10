@@ -6,6 +6,9 @@ import Text from '../Text'
 import projects from '../../data/projects'
 
 import project1logo from '@/assets/images/projectsLogos/session-js.png'
+import project2logo from '@/assets/images/projectsLogos/session-js.png'
+import project3logo from '@/assets/images/projectsLogos/session-js.png'
+import project4logo from '@/assets/images/projectsLogos/session-js.png'
 
 import SFBlack from '@/assets/fonts/SFBlack.blob'
 import SFBold from '@/assets/fonts/SFBold.blob'
