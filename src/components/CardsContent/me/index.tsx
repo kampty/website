@@ -136,12 +136,12 @@ const links = {
     label: '@VityaSchel'
   },
  Instagram: {
-    icon: InstagramLogo,
+    icon: SiTelegram,
     href: 'https://instagram.com/itskampty',
     label: '@itskampty'
  },
   YouTube: {
-    icon: YouTubeLogo,
+    icon: SiTelegram,
     href: 'https://www.youtube.com/@itskampty',
     label: '@itskampty'
   },
