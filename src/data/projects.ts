@@ -95,7 +95,7 @@ const projects: Project[] = [
     },
     unpublic: false,
     hidden: false,
-    logo: onsRegistryLogo,
+    logo: sessionJsLogo,
     links: [
       'https://ons.sessionbots.directory'
     ],
@@ -122,7 +122,7 @@ const projects: Project[] = [
     },
     unpublic: true,
     hidden: false,
-    logo: sessionBotsDirectoryLogo,
+    logo: sessionJsLogo,
     links: [
       'https://floofbite.com',
       'https://floofbite.com',
