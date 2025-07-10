@@ -135,36 +135,36 @@ const links = {
     href: 'https://go.kampty.xyz/github',
     label: '@VityaSchel'
   },
-  // VKontakte: {
-  //   icon: VKLogo,
-  //   href: 'https://vk.com/hloth',
-  //   label: 'Виктор Щелочков'
-  // },
-  LinkedIN: {
-    icon: LinkedinLogo,
-    href: 'https://www.linkedin.com/in/hloth/',
-    label: 'Viktor Shchelochkov'
+ Instagram: {
+    icon: InstagramLogo,
+    href: 'https://instagram.com/itskampty',
+    label: '@itskampty'
+ },
+  YouTube: {
+    icon: YouTubeLogo,
+    href: 'https://www.youtube.com/@itskampty',
+    label: '@itskampty'
   },
   Twitter: {
     icon: AiFillTwitterCircle,
-    href: 'https://twitter.com/hlothdev',
-    label: '@hlothdev'
+    href: 'https://go.kampty.xyz/x',
+    label: '@itskampty'
   },
   Telegram: {
     icon: SiTelegram,
-    href: 'https://t.me/hlothdev',
-    label: '@hlothdev'
+    href: 'https://go.kampty.xyz/telegram',
+    label: '@kampty'
   },
   Email: {
     icon: MdEmail,
-    href: 'mailto:hi@hloth.dev',
-    label: 'hi@hloth.dev'
+    href: 'mailto:kampty@uwu.by',
+    label: 'kampty@uwu.by'
   },
-  Telephone: {
-    icon: MdLocalPhone,
-    href: 'tel:79019404698',
-    label: '8 9019 404 69 8'
-  },
+  // Telephone: {
+    // icon: MdLocalPhone,
+    // href: 'tel:79019404698',
+    // label: '8 9019 404 69 8'
+  // },
 }
 
 export function Me() {
