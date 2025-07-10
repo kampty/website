@@ -44,23 +44,24 @@ export function PortfolioCardText() {
   )
 }
 
-export function usePortfolioCardStyles(theme: string) {
-  const project1ImageMap = useLoader(TextureLoader, project1logo)
-  const project2ImageMap = useLoader(TextureLoader, project2logo)
-  const project3ImageMap = useLoader(TextureLoader, project3logo)
-  const project4ImageMap = useLoader(TextureLoader, project4logo)
+// export function usePortfolioCardStyles(theme: string) {
+  // const project1ImageMap = useLoader(TextureLoader, project1logo)
+  // const project2ImageMap = useLoader(TextureLoader, project2logo)
+  // const project3ImageMap = useLoader(TextureLoader, project3logo)
+  // const project4ImageMap = useLoader(TextureLoader, project4logo)
 
-  const { extrudingColor } = useSpring({ extrudingColor: theme === 'light' ? 1 : 0.05 })
-  const extrudingMaterial: Partial<MaterialJSON> = { roughness: 1, ...color(extrudingColor) }
+  // const { extrudingColor } = useSpring({ extrudingColor: theme === 'light' ? 1 : 0.05 })
+  // const extrudingMaterial: Partial<MaterialJSON> = { roughness: 1, ...color(extrudingColor) }
 
-  return {
-    Project1Image: { map: project1ImageMap },
-    Project2Image: { map: project2ImageMap },
-    Project3Image: { map: project3ImageMap },
-    Project4Image: { map: project4ImageMap },
-    Project1Mat: extrudingMaterial,
-    Project2Mat: extrudingMaterial,
-    Project3Mat: extrudingMaterial,
-    Project4Mat: extrudingMaterial,
+  // return {
+    // Project1Image: { map: project1ImageMap },
+    // Project2Image: { map: project2ImageMap },
+    // Project3Image: { map: project3ImageMap },
+    // Project4Image: { map: project4ImageMap },
+    // Project1Mat: extrudingMaterial,
+    // Project2Mat: extrudingMaterial,
+    // Project3Mat: extrudingMaterial,
+    // Project4Mat: extrudingMaterial,
   }
 }
+
