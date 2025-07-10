@@ -24,7 +24,7 @@ export function MeCardText() {
         {translation.CARD_ME_LAST_NAME}
       </Text>
       <Text position={[3.65, 0.87, 0.05]} font={SFBold} size={3.2} hAlign='left' color={textColor} layers={1}>
-        @hloth
+        @kampty
       </Text>
       <Text position={[2, 0.63, 0.03]} font={SFMedium} size={3.6} color={textColor} layers={1}>
         {translation.CARD_ME_SPECIALIZATION}
