@@ -34,7 +34,7 @@ function AboutCard({ isMobile }: {
         </div>
         <p dangerouslySetInnerHTML={{ __html: dates(translation.PARAGRAPH_2) }} />
         <div className={styles.imgBlock}>
-          <video src={sticker2} autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
+          <video src={avatar} autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
           <p dangerouslySetInnerHTML={{ __html: translation.MY_PROJECTS }} />
         </div>
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED }} />

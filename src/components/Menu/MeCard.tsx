@@ -20,9 +20,6 @@ export function MeCardText() {
       <Text position={[2, 1.4, 0.05]} font={SFBlack} size={5.4} color={textColor} layers={1}>
         {translation.CARD_ME_FIRST_NAME}
       </Text>
-      <Text position={[2, 1.13, 0.05]} font={SFBlack} size={locale === 'en-US' ? 4.2 : 5.4} color={textColor} layers={1}>
-        {translation.CARD_ME_LAST_NAME}
-      </Text>
       <Text position={[3.65, 0.87, 0.05]} font={SFBold} size={3.2} hAlign='left' color={textColor} layers={1}>
         @kampty
       </Text>
