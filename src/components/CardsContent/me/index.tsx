@@ -25,12 +25,12 @@ function AboutCard({ isMobile }: {
       <div className={styles.text}>
         <h2 dangerouslySetInnerHTML={{ __html: translation.HEADING }} />
         <div className={styles.imgBlock}>
-          <img src='/static/site-decorations/vk-dog.webp' alt={translation.INTRO_IMAGE} align='right' width={isMobile ? 80 : 130} />
+          <img src='/src/assets/images/stickers/vk-dog.webp' alt={translation.INTRO_IMAGE} align='right' width={isMobile ? 80 : 130} />
           <p dangerouslySetInnerHTML={{ __html: dates(translation.INTRO) }} />
         </div>
         <p dangerouslySetInnerHTML={{ __html: dates(translation.PARAGRAPH_2) }} />
         <div className={styles.imgBlock}>
-          <video src="/static/site-decorations/kolobanga.webm" autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
+          <video src="/src/assets/images/stickers/kolobanga.webm" autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
           <p dangerouslySetInnerHTML={{ __html: translation.MY_PROJECTS }} />
         </div>
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED }} />
@@ -43,11 +43,11 @@ function AboutCard({ isMobile }: {
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_7 }} />
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_8 }} />
         <div className={styles.imgBlock}>
-          <img src='/static/site-decorations/shrek.webp' alt={translation.PARSING_IMAGE} align='right' width={isMobile ? 70 : 130} />
+          <img src='/src/assets/images/stickers/shrek.webp' alt={translation.PARSING_IMAGE} align='right' width={isMobile ? 70 : 130} />
           <p dangerouslySetInnerHTML={{ __html: translation.PARSING }} />
         </div>
         <div className={styles.imgBlock}>
-          <img src='/static/site-decorations/qwq.webp' alt={translation.ENDING_IMAGE} align='left' width={isMobile ? 80 : 140} />
+          <img src='/src/assets/images/stickers/qwq.webp' alt={translation.ENDING_IMAGE} align='left' width={isMobile ? 80 : 140} />
           <p dangerouslySetInnerHTML={{ __html: translation.ENDING }} />
         </div>
       </div>
