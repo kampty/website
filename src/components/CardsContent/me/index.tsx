@@ -14,6 +14,10 @@ import { useAppSelector } from '@/store/hooks.js'
 import { selectTranslation } from '@/store/reducers/translation.js'
 import { Button, ButtonBase } from '@mui/material'
 import { FiExternalLink } from 'react-icons/fi'
+import sticker1 from '../../../assets/images/stickers/vk-dog.webp'
+import sticker2 from '../../../assets/images/stickers/qwq.webp'
+import sticker3 from '../../../assets/images/stickers/shrek.webp'
+import sticker4 from '../../../assets/images/stickers/kolobanga.webm'
 
 function AboutCard({ isMobile }: {
   isMobile: boolean
@@ -25,12 +29,12 @@ function AboutCard({ isMobile }: {
       <div className={styles.text}>
         <h2 dangerouslySetInnerHTML={{ __html: translation.HEADING }} />
         <div className={styles.imgBlock}>
-          <img src='/src/assets/images/stickers/vk-dog.webp' alt={translation.INTRO_IMAGE} align='right' width={isMobile ? 80 : 130} />
+          <img src='sticker1' alt={translation.INTRO_IMAGE} align='right' width={isMobile ? 80 : 130} />
           <p dangerouslySetInnerHTML={{ __html: dates(translation.INTRO) }} />
         </div>
         <p dangerouslySetInnerHTML={{ __html: dates(translation.PARAGRAPH_2) }} />
         <div className={styles.imgBlock}>
-          <video src="/src/assets/images/stickers/kolobanga.webm" autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
+          <video src="sticker2" autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
           <p dangerouslySetInnerHTML={{ __html: translation.MY_PROJECTS }} />
         </div>
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED }} />
@@ -43,11 +47,11 @@ function AboutCard({ isMobile }: {
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_7 }} />
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_8 }} />
         <div className={styles.imgBlock}>
-          <img src='/src/assets/images/stickers/shrek.webp' alt={translation.PARSING_IMAGE} align='right' width={isMobile ? 70 : 130} />
+          <img src='sticker3' alt={translation.PARSING_IMAGE} align='right' width={isMobile ? 70 : 130} />
           <p dangerouslySetInnerHTML={{ __html: translation.PARSING }} />
         </div>
         <div className={styles.imgBlock}>
-          <img src='/src/assets/images/stickers/qwq.webp' alt={translation.ENDING_IMAGE} align='left' width={isMobile ? 80 : 140} />
+          <img src='sticker4' alt={translation.ENDING_IMAGE} align='left' width={isMobile ? 80 : 140} />
           <p dangerouslySetInnerHTML={{ __html: translation.ENDING }} />
         </div>
       </div>
@@ -105,7 +109,7 @@ function MiniProfile() {
       >
         <a className='w-full block absolute bottom-0 left-0 text-white border-solid border-t border-x-0 border-b-0 border-t-neutral-800' href='https://cv.hloth.dev' target='_blank' rel='nofollow noreferrer'>
           <ButtonBase tabIndex={-1} className='font-[inherit] font-medium w-full !justify-between !p-4 text-xs'>
-            <div>Открыть CV / Резюме</div>
+            <div>...</div>
             <MdChevronRight className='text-white' />
           </ButtonBase>
         </a>
@@ -133,7 +137,7 @@ const links = {
   GitHub: {
     icon: ImGithub,
     href: 'https://go.kampty.xyz/github',
-    label: '@VityaSchel'
+    label: '@kampty'
   },
  Instagram: {
     icon: SiTelegram,

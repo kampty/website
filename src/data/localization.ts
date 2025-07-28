@@ -439,11 +439,11 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
     'CARD_ME_LAST_NAME': '✨',
     'CARD_ME_SPECIALIZATION': 'Fursuiter',
     'FULL_SPECIALIZATION': ', furry content creator and developer',
-    'CARD_ME_CITY': 'Batumi',
+    'CARD_ME_CITY': 'Kyiv',
     'CARD_PORTFOLIO': 'Projects',
     'CARD_PORTFOLIO_IN_PORTFOLIO': 'in portfolio',
     'CARD_SERVICES': 'Services',
-    'ONION_SITE_LINK': 'Switch to onion version of this website',
+    'ONION_SITE_LINK': 'Onion websites aren`t supported. This button will be replaced soon',
     'THEME_SWITCH_TO_LIGHT': 'Switch to light theme',
     'THEME_SWITCH_TO_DARK': 'Switch to dark theme',
     'CHANGE_LANGUAGE': 'Change language',
@@ -531,7 +531,7 @@ const translation: Record<'ru-RU' | '_DEFAULT_', Translation> = {
           'Kotyaken',
           'Kampty - the current one, which I use everywhere, except for the sites, where it is already taken',
         ],
-        'TEXT3': 'All these options were not even considered, when I came up with hloth.'
+        'TEXT3': 'All these options were not even considered, when I came up with @kampty.'
       },
       'ABOUT_ME_2': {
         'HEADING': 'About me (career)',
