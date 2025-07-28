@@ -15,9 +15,9 @@ import { selectTranslation } from '@/store/reducers/translation.js'
 import { Button, ButtonBase } from '@mui/material'
 import { FiExternalLink } from 'react-icons/fi'
 import sticker1 from '../../../assets/images/stickers/vk-dog.webp'
-import sticker2 from '../../../assets/images/stickers/qwq.webp'
+import sticker2 from '../../../assets/images/stickers/kolobanga.webm'
 import sticker3 from '../../../assets/images/stickers/shrek.webp'
-import sticker4 from '../../../assets/images/stickers/kolobanga.webm'
+import sticker4 from '../../../assets/images/stickers/qwq.webp'
 
 function AboutCard({ isMobile }: {
   isMobile: boolean
@@ -34,7 +34,7 @@ function AboutCard({ isMobile }: {
         </div>
         <p dangerouslySetInnerHTML={{ __html: dates(translation.PARAGRAPH_2) }} />
         <div className={styles.imgBlock}>
-          <video src={avatar} autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
+          <video src={sticker2} autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
           <p dangerouslySetInnerHTML={{ __html: translation.MY_PROJECTS }} />
         </div>
         <p dangerouslySetInnerHTML={{ __html: translation.FEATURED }} />
