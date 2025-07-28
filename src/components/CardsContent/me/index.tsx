@@ -101,7 +101,7 @@ function MiniProfile() {
     <div className='flex-1 flex flex-col gap-2'>
       <Card
         containerClassname={`${styles.profileCard} relative [&>*]:pb-16`}
-        avatar={<img src=-avatar} width={100} height={100} style={{ borderRadius: 999 }} />}
+        avatar={<img src=avatar} width={100} height={100} style={{ borderRadius: 999 }} />}
         avatarStyles={{ padding: 0, boxShadow: '0 0 2px 0 rgba(0, 0, 0.25)' }}
         title={`${translation.CARD_ME_FIRST_NAME} ${translation.CARD_ME_LAST_NAME}`}
         subtitle={translation.FULL_SPECIALIZATION}
