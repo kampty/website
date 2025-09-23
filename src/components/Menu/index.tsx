@@ -18,13 +18,6 @@ import { ReactComponent as LinkedinLogo } from '../../../assets/images/svgIcons/
 import { AiFillTwitterCircle } from 'react-icons/ai'
 import { MdChevronRight, MdEmail, MdLocalPhone } from 'react-icons/md'
 import { ImGithub } from 'react-icons/im'
-import avatar from '../../../assets/images/avatar.jpeg'
-import Experience from './Experience.js'
-import { dates } from '../../../utils.js'
-import { useAppSelector } from '@/store/hooks.js'
-import { selectTranslation } from '@/store/reducers/translation.js'
-import { Button, ButtonBase } from '@mui/material'
-import { FiExternalLink } from 'react-icons/fi'
 
 function AboutCard({ isMobile }: {
   isMobile: boolean
