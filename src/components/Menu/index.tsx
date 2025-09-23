@@ -26,8 +26,8 @@ const setCursor = (payload) => ({ type: 'SET_CURSOR', payload })
 const resetCursor = (id) => ({ type: 'RESET_CURSOR', payload: id })
 const setRoute = (payload) => ({ type: 'SET_ROUTE', payload })
 
-// Card layouts matching your original structure
-const layouts = {
+// Card layouts matching your original structure - exported for Camera component
+export const layouts = {
   wide: {
     card1: [0, 0],
     card2: [1, 0], 
