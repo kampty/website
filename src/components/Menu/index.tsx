@@ -13,153 +13,209 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks'
 import { resetCursor, setCursor } from '@/store/reducers/cursor'
 import { setRoute } from '@/store/reducers/route'
 
-export default function Menu() {
+import styles from './styles.module.scss'
+import Card from '../Card/index.js'
+import { connect } from 'react-redux'
+import { SiTelegram } from 'react-icons/si'
+import { ReactComponent as LinkedinLogo } from '../../../assets/images/svgIcons/linkedin_logo.svg'
+import { AiFillTwitterCircle } from 'react-icons/ai'
+import { MdChevronRight, MdEmail, MdLocalPhone } from 'react-icons/md'
+import { ImGithub } from 'react-icons/im'
+import avatar from '../../../assets/images/avatar.jpeg'
+import Experience from './Experience.js'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { dates } from '../../../utils.js'
+import { useAppSelector } from '@/store/hooks.js'
+import { selectTranslation } from '@/store/reducers/translation.js'
+import { Button, ButtonBase } from '@mui/material'
+import { FiExternalLink } from 'react-icons/fi'
+import sticker1 from '../../../assets/images/stickers/vk-dog.webp'
+import sticker2 from '../../../assets/images/stickers/kolobanga.webm'
+import sticker3 from '../../../assets/images/stickers/shrek.webp'
+import sticker4 from '../../../assets/images/stickers/qwq.webp'
+
+function AboutCard({ isMobile }: {
+  isMobile: boolean
+}) {
+  const translation = useAppSelector(selectTranslation).ABOUT_ME
+
   return (
-    <>
-      <Suspense fallback={null}>
-        <MenuItem cardID='me' />
-      </Suspense>
-      <Suspense fallback={null}>
-        <MenuItem cardID='portfolio' />
-        <MenuItem cardID='services' />
-      </Suspense>
-      <Suspense fallback={null}>
-        <MenuItem cardID='donate' />
-        <MenuItem cardID='about' />
-        {/* <MenuItem cardID='archiveLink' /> */}
-      </Suspense>
-    </>
+    <Card className={styles.about}>
+      <div className={styles.text}>
+        <h2 dangerouslySetInnerHTML={{ __html: translation.HEADING }} />
+        <div className={styles.imgBlock}>
+          <img src={sticker1} alt={translation.INTRO_IMAGE} align='right' width={isMobile ? 80 : 130} />
+          <p dangerouslySetInnerHTML={{ __html: dates(translation.INTRO) }} />
+        </div>
+        <p dangerouslySetInnerHTML={{ __html: dates(translation.PARAGRAPH_2) }} />
+        <div className={styles.imgBlock}>
+          <video src={sticker2} autoPlay width={isMobile ? 50 : 170} muted loop alt={translation.MY_PROJECTS_IMAGE} />
+          <p dangerouslySetInnerHTML={{ __html: translation.MY_PROJECTS }} />
+        </div>
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_1 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_2 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_3 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_4 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_5 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_6 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_7 }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.FEATURED_8 }} />
+        <div className={styles.imgBlock}>
+          <img src={sticker3} alt={translation.PARSING_IMAGE} align='right' width={isMobile ? 70 : 130} />
+          <p dangerouslySetInnerHTML={{ __html: translation.PARSING }} />
+        </div>
+        <div className={styles.imgBlock}>
+          <img src={sticker4} alt={translation.ENDING_IMAGE} align='left' width={isMobile ? 80 : 140} />
+          <p dangerouslySetInnerHTML={{ __html: translation.ENDING }} />
+        </div>
+      </div>
+    </Card>
   )
 }
 
-export const layouts = {
-  wide: {
-    me: [1, 1],
-    portfolio: [0, 0],
-    services: [1.97, 0],
-    donate: [0, -1],
-    about: [1, -1],
-    archiveLink: [2, -1],
-    offset: [0, 0],
-  },
-  tall: {
-    me: [0, 1],
-    portfolio: [0, 0],
-    services: [1, -1],
-    donate: [0, -1],
-    about: [0, -2],
-    archiveLink: [1, -2],
-    offset: [0.525, 0.5]
-  }
-}
+function WhatIsKampty() {
+  const translation = useAppSelector(selectTranslation).ABOUT_ME
 
-const linkCards = {
-  'archiveLink': 'https://archive.kampty.xyz/', 
-  'blogLink': 'https://blog.kampty.xyz/'
-}
-
-type MenuItemProps = {
-  cardID: string;
-};
-
-function MenuItem(props: MenuItemProps) {
-  const fileID = Object.keys(linkCards).includes(props.cardID) ? 'external' : props.cardID
-  const card = useLoader(GLTFLoader, `/static/models/cards/card_${fileID}.glb`)
-  const [isPointerOver, setIsPointerOver] = React.useState(false)
-  const { translation, theme, route, layout } = useAppSelector(state => ({
-    translation: state.translation,
-    theme: state.theme.theme,
-    route: state.route.route,
-    layout: state.layout.state
-  }))
-  const dispatch = useAppDispatch()
-
-  const portfolioCardStyles = usePortfolioCardStyles(theme)
-  const { rotation } = useSpring({
-    to: { rotation: route === props.cardID ? 3.16 : 0 },
-    config: { friction: 30 }
-  })
-
-  const { textColor, cubeColor, iconBgColor, iconColor, locationIconColor } = useSpring({
-    textColor: theme === 'light' ? '#545454' : '#dddddd',
-    cubeColor: theme === 'light' ? (isPointerOver ? 1.3 : 1.8) : (isPointerOver ? 0.02 : 0.012),
-    iconBgColor: theme === 'light' ? 1.2 : 0.05,
-    iconColor: theme === 'light' ? 1.4 : 0.05,
-    locationIconColor: theme === 'light' ? 0.05 : 1.5
-  })
-
-  const wideCard = ['me', 'portfolio'].includes(props.cardID)
-  let position = layouts[layout][props.cardID as 'me' | 'portfolio' | 'services' | 'donate' | 'about' | 'archiveLink'] as [number, number]
-  const offset = layouts[layout].offset
-  position = [(position[0] + offset[0])*2 - 3, (position[1] + offset[1])*2 - 0.5]
-  const textZ = -0.06
-
-  const materials = applyMaterial(card.scene, {
-    cube: { roughness: 1, ...color(cubeColor) },
-    iconbg: color(iconBgColor),
-    '': color(iconColor),
-    Location: color(locationIconColor),
-    ...portfolioCardStyles
-  })
-
-  const handlePointerOver = () => {
-    dispatch(setCursor({ id: props.cardID, cursor: 'pointer' }))
-    setIsPointerOver(true)
-  }
-
-  const handlePointerOut = () => {
-    dispatch(resetCursor(props.cardID))
-    setIsPointerOver(false)
-  }
-
-  const handleClick = () => {
-    if (Object.keys(linkCards).includes(props.cardID)) {
-      window.open(linkCards[props.cardID as 'archiveLink' | 'blogLink'], '_blank')?.focus()
-    } else {
-      dispatch(setRoute({ route: props.cardID }))
-    }
-  }
-  
   return (
-    <group position={[position[0], position[1], -4.5]}>
-      <animated.group position={[0, 0.5, 0.5]} rotation-x={rotation}>
-        <group position={[0, -1, 1]}>
-          {/* @ts-expect-error Type instantiation is excessively deep and possibly infinite */}
-          <animated.primitive
-            object={card.scene}
-            scale={new Array(3).fill(0.97)}
-            onPointerOver={handlePointerOver}
-            onPointerOut={handlePointerOut}
-            onClick={handleClick}
-            {...materials}
-            {...props}
-          />
-          {!wideCard
-            ? <Text
-              position={[0.97, 0.3, textZ]}
-              font={SFBold}
-              size={5.5}
-              hAlign='center'
-              color={textColor}
-              bevelEnabled
-              layers={1}
-            >
-              {translation[
-                {
-                  about: 'CARD_ABOUT',
-                  donate: 'CARD_DONATE',
-                  services: 'CARD_SERVICES',
-                  archiveLink: 'CARD_ARCHIVE_LINK'
-                }[props.cardID as 'about' | 'donate' | 'services' | 'archiveLink'] as 'CARD_ABOUT' | 'CARD_DONATE' | 'CARD_SERVICES' | 'CARD_ARCHIVE_LINK'
-              ]?.toUpperCase()}
-            </Text>
-            : {
-              me: <MeCardText />,
-              portfolio: <PortfolioCardText/>
-            }[props.cardID]
-          }
-        </group>
-      </animated.group>
-    </group>
+    <Card className={styles.about}>
+      <div className={styles.text}>
+        <h2 dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.HEADING }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.TEXT }} />
+        <ol>
+          {translation.WHAT_IS_KAMPTY.CRITERIA.map((criteria, i) => <li key={i}>{criteria}</li>)}
+        </ol>
+        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.TEXT2 }} />
+        <ul>
+          {translation.WHAT_IS_KAMPTY.VARIANTS.map((variant, i) => <li key={i}>{variant}</li>)}
+        </ul>
+        <p dangerouslySetInnerHTML={{ __html: translation.WHAT_IS_KAMPTY.TEXT3 }} />
+      </div>
+    </Card>
+  )
+}
+
+function AboutMe2() {
+  const translation = useAppSelector(selectTranslation).ABOUT_ME
+
+  return (
+    <Card className={styles.about}>
+      <div className={styles.text}>
+        <h2 dangerouslySetInnerHTML={{ __html: translation.ABOUT_ME_2.HEADING }} />
+        <p dangerouslySetInnerHTML={{ __html: translation.ABOUT_ME_2.INTRO }} />
+        <p dangerouslySetInnerHTML={{ __html: dates(translation.ABOUT_ME_2.TEXT, 'floor') }} className='whitespace-pre-wrap' />
+      </div>
+    </Card>
+  )
+}
+
+function MiniProfile() {
+  const translation = useAppSelector(selectTranslation)
+
+  return (
+    <div className='flex-1 flex flex-col gap-2'>
+      <Card
+        containerClassname={`${styles.profileCard} relative [&>*]:pb-16`}
+        avatar={<img src={avatar} width={100} height={100} style={{ borderRadius: 999 }} />}
+        avatarStyles={{ padding: 0, boxShadow: '0 0 2px 0 rgba(0, 0, 0.25)' }}
+        title={`${translation.CARD_ME_FIRST_NAME} ${translation.CARD_ME_LAST_NAME}`}
+        subtitle={translation.FULL_SPECIALIZATION}
+        caption='@kampty / @itskampty'
+      >
+        <a className='w-full block absolute bottom-0 left-0 text-white border-solid border-t border-x-0 border-b-0 border-t-neutral-800' href='https://cv.hloth.dev' target='_blank' rel='nofollow noreferrer'>
+          <ButtonBase tabIndex={-1} className='font-[inherit] font-medium w-full !justify-between !p-4 text-xs'>
+            <div>...</div>
+            <MdChevronRight className='text-white' />
+          </ButtonBase>
+        </a>
+      </Card>
+    </div>
+  )
+}
+
+function Contacts() {
+  return (
+    <Card 
+      containerClassname={styles.contactsContainer}
+      className='flex flex-col gap-3'
+    >
+      {Object.values(links).map((link, i) => (
+        <div key={i} className='flex items-center gap-2.5'>
+          <link.icon /> <a href={link.href} target='_blank' rel='noreferrer'>{link.label}</a>
+        </div>
+      ))}
+    </Card>
+  )
+}
+
+const links = {
+  GitHub: {
+    icon: ImGithub,
+    href: 'https://go.kampty.xyz/github',
+    label: '@kampty'
+  },
+ Instagram: {
+    icon: SiTelegram,
+    href: 'https://instagram.com/itskampty',
+    label: '@itskampty'
+ },
+  YouTube: {
+    icon: SiTelegram,
+    href: 'https://www.youtube.com/@itskampty',
+    label: '@itskampty'
+  },
+  Twitter: {
+    icon: AiFillTwitterCircle,
+    href: 'https://go.kampty.xyz/x',
+    label: '@itskampty'
+  },
+  Telegram: {
+    icon: SiTelegram,
+    href: 'https://go.kampty.xyz/telegram',
+    label: '@kampty'
+  },
+  Email: {
+    icon: MdEmail,
+    href: 'mailto:kampty@uwu.by',
+    label: 'kampty@uwu.by'
+  },
+  // Telephone: {
+    // icon: MdLocalPhone,
+    // href: 'tel:79019404698',
+    // label: '8 9019 404 69 8'
+  // },
+}
+
+export function Me() {
+  const isMobile = useMediaQuery('(max-width: 1360px)')
+
+  return (
+    <div className={styles.me}>
+      {
+        !isMobile
+          ? (<>
+            <div className={styles.info}>
+              <AboutCard isMobile={isMobile} />
+              <AboutMe2 />
+            </div>
+            <div className={styles.rightCol}>
+              <div className={styles.topRow}>
+                <MiniProfile />
+                <Contacts />
+              </div>
+              <WhatIsKampty />
+              <Experience />
+            </div>
+          </>)
+          : (<div className={styles.info}>
+            <MiniProfile />
+            <Contacts />
+            <AboutCard isMobile={isMobile} />
+            <WhatIsKampty />
+            <AboutMe2 />
+            <Experience />
+          </div>)
+      }
+    </div>
   )
 }
